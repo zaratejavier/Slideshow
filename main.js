@@ -13,14 +13,33 @@ var images = new Array(
   'images/IMG_0735.JPG',
 );
 
-var timer
+
+// var timer
 var index = 0
 
 /* ////////////////////////////////////////Event listeners////////////////////////////////////// */
 function listen(){
-  document.getElementById('next').addEventListener("click", changePhoto);
-  document.getElementById('prev').addEventListener("click", previous);
+   document.getElementById('next').addEventListener("click", changePhoto);
+   document.getElementById('prev').addEventListener("click", previous);
 }
+
+document.onkeydown = function(event) {
+  switch (event.keyCode) {
+     case 37:
+          previous() // left arrow key
+        break;
+     case 38:
+          changePhoto(); // up arrow key
+        break;
+     case 39:
+          changePhoto() //right arrow key
+        break;
+     case 40:
+          previous() //down arrow key
+        break;
+  }
+}
+
 
 /* ///////////////////////////////Functions for event listeners///////////////////////////////// */
 
@@ -29,7 +48,7 @@ function changePhoto() {
   if (index >= images.length) {
     index = 0;
   }
-  // document.getElementById("photo").innerHTML.src = images[index]
+
   document.getElementById("photo").src = images[index];
 
 }
@@ -40,10 +59,8 @@ function previous() {
     index = images.length - 1;
   }
 
-  // document.getElementById("photo").innerHTML.src = images[index]
   document.getElementById("photo").src = images[index];
 
 
 }
-
 
