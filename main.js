@@ -6,7 +6,13 @@ var images = new Array(
   'images/IMG_0726.JPG',
   'images/IMG_0727.JPG',
   'images/IMG_0728.JPG',
+  'images/IMG_0729.JPG',
+  'images/IMG_0730.JPG',
+  'images/IMG_0733.JPG',
+  'images/IMG_0734.JPG',
+  'images/IMG_0735.JPG',
 );
+
 var timer
 var index = 0
 
