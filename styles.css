@@ -15,7 +15,7 @@
   padding: 2px 20px 20px 20px;
 }
 
-#prev, #next{
+#prev, #next, #random{
   padding: 10px 30px 10px 30px;
   margin: 30px;
   background-color: rgb(233, 216, 195);
@@ -24,7 +24,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#prev:hover, #next:hover{
+#prev:hover, #next:hover, #random:hover{
   box-shadow: 5px 4px 13px #b3b3b3, -5px -5px 13px #b3b3b3;
   cursor: pointer;
   outline:0;
