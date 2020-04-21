@@ -22,14 +22,14 @@ function listen(){
    document.getElementById('next').addEventListener("click", changePhoto);
    document.getElementById('prev').addEventListener("click", previous);
    document.getElementById('random').addEventListener("click", randomPicture)
+
 }
 
-// const randomPic = images[Math.floor(Math.random() * images.length)];
-
-// console.log("random image: ", randomPic)
 
 document.onkeydown = function(event) {
   switch (event.keyCode) {
+    case 32:
+          randomPicture() // space button
      case 37:
           previous() // left arrow key
         break;
@@ -46,13 +46,13 @@ document.onkeydown = function(event) {
 }
 
 
+
+
 /* ///////////////////////////////Functions for event listeners///////////////////////////////// */
+
 
 function randomPicture(){
   const randomPic = images[Math.floor(Math.random() * images.length)];
-
-  // console.log("random image: ", randomPic)
-
   document.getElementById("photo").src = randomPic
 }
 
@@ -63,8 +63,8 @@ function changePhoto() {
   }
 
   document.getElementById("photo").src = images[index];
-
 }
+
 
 function previous() {
   index--;

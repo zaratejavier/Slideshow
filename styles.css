@@ -16,6 +16,9 @@
 }
 
 #prev, #next, #random{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 10px 30px 10px 30px;
   margin: 30px;
   background-color: rgb(233, 216, 195);
@@ -33,4 +36,8 @@
 body{
   background-color: lightgray;
   
+}
+
+#box{
+  margin-top: 100px;
 }
