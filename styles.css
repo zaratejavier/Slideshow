@@ -9,6 +9,14 @@
 	border-radius: 5px;
 }
 
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
 #buttons{
   display: flex; 
   justify-content: center;
@@ -39,5 +47,5 @@ body{
 }
 
 #box{
-  margin-top: 100px;
+  margin-top: 50px;
 }

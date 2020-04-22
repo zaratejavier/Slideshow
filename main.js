@@ -46,14 +46,15 @@ document.onkeydown = function(event) {
 }
 
 
-
-
 /* ///////////////////////////////Functions for event listeners///////////////////////////////// */
 
-
 function randomPicture(){
-  const randomPic = images[Math.floor(Math.random() * images.length)];
-  document.getElementById("photo").src = randomPic
+  for (let i = 0; i < 10; i++) {
+    setTimeout(() => {
+      const randomPic = images[Math.floor(Math.random() * images.length)];
+      document.getElementById("photo").src = randomPic
+    }, 50 * i);  
+  }
 }
 
 function changePhoto() {
@@ -61,7 +62,6 @@ function changePhoto() {
   if (index >= images.length) {
     index = 0;
   }
-
   document.getElementById("photo").src = images[index];
 }
 
@@ -71,9 +71,6 @@ function previous() {
   if (index < 0) {
     index = images.length - 1;
   }
-
   document.getElementById("photo").src = images[index];
-
-
 }
 
